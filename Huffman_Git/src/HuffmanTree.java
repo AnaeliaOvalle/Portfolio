@@ -7,31 +7,30 @@ public class HuffmanTree extends Tree
 	private TextFile outputText, inputText;
 	private int huffmanLength=0;
 	private int inputSize=0;
-    private String[] binaryTable = new String[256];
-    private static int treeArrayCount=0;
-    private String encoded_String="";
+	private String[] binaryTable = new String[256];
+	private static int treeArrayCount=0;
+	private String encoded_String="";
 	private boolean verbose;
    
     
-
-    //create huffman tree from *text file*
-	public HuffmanTree(TextFile inputText, BinaryFile outputBinary, boolean verbose) {
-		this.inputText=inputText;
-		this.outputBinary=outputBinary;
-		this.superTree = createHuffman();
-		this.verbose=verbose;
+//create huffman tree from *text file*
+public HuffmanTree(TextFile inputText, BinaryFile outputBinary, boolean verbose) {
+	this.inputText=inputText;
+	this.outputBinary=outputBinary;
+	this.superTree = createHuffman();
+	this.verbose=verbose;
 		
-		//create lookup table for each character
-		createKey(binaryTable, superTree.root, encoded_String);
+	//create lookup table for each character
+	createKey(binaryTable, superTree.root, encoded_String);
 		
-		//calculate size of huffman tree
-		getHuffmanSize(superTree.root);
+	//calculate size of huffman tree
+	getHuffmanSize(superTree.root);
 	
 	}
     
-
-	//create huffman tree from *binary file*
-    public HuffmanTree(BinaryFile inputBinary, TextFile outputText){
+//create huffman tree from *binary file*
+	
+	public HuffmanTree(BinaryFile inputBinary, TextFile outputText){
     	this.inputBinary=inputBinary;
     	this.outputText=outputText;
     	
@@ -40,7 +39,8 @@ public class HuffmanTree extends Tree
 
     }
     
-    //get total huffman file size
+    
+ //get total huffman file size
 	public void getHuffmanSize(GenNode node){
 		//add 32 bits for binary header +16 bits for 'HF'
 		huffmanLength+=48;
