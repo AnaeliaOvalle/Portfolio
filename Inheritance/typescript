@@ -1,0 +1,88 @@
+Script started on Fri Nov 27 21:06:09 2015
+[?1034hbash-3.2$ javac Employee.java E[KHourlyEmployee.java SalariedEmployee.java BasePlusCommissionEmployee.java CommissionEmployee.java P ayrollSystemTestQ3.java E[KPayrollSystemTestQ4.java
+bash-3.2$ java E[KPayrollSystemTestQ3
+*****salariedEmployee*****
+salaried employee: SalariedEmployee@74a14482
+weekly salary: $800.00
+
+*****salariedEmployeeDeepCopy*****
+salaried employee: SalariedEmployee@1540e19d
+weekly salary: $800.00
+
+equals(): SalariedEmployee Deep copy and the original are equal
+==: SalariedEmployee Deep copy and the original are not equal
+
+*****hourlyEmployee*****
+hourly employee: HourlyEmployee@677327b6
+hourly wage: $16.75; hours worked: 40.00
+
+*****hourlyEmployeeDeepCopy*****
+hourly employee: HourlyEmployee@14ae5a5
+hourly wage: $16.75; hours worked: 40.00
+
+equals(): HourlyEmployee Deep copy and the original equal
+==: HourlyEmployee Deep copy and the original are not equal
+
+*****commissionEmployee*****
+commission employee: CommissionEmployee@7f31245a
+gross sales: $10,000.00; commission rate: 0.06
+
+*****commissionEmployeeDeepCopy*****
+commission employee: CommissionEmployee@6d6f6e28
+gross sales: $10,000.00; commission rate: 0.06
+
+equals: CommissionEmployee Deep copy and the original are equal
+==: CommissionEmployee Deep copy and the original are not equal
+
+*****basePlusCommisionEmployee*****
+base-salaried commission employee: BasePlusCommissionEmployee@135fbaa4
+gross sales: $5,000.00; commission rate: 0.04; base salary: $300.00
+
+basePlusCommissionEmployeeDeepCopy
+base-salaried commission employee: BasePlusCommissionEmployee@45ee12a7
+gross sales: $5,000.00; commission rate: 0.04; base salary: $300.00
+
+equals: BasePlusCommissionEmployee Deep copy and the original are equal
+==: BasePlusCommissionEmployee Deep copy and the original are not equal
+
+bash-3.2$ java PayrollSystemTestQ4
+*******Employees before sorting************ 
+
+salaried employee: SalariedEmployee@74a14482
+weekly salary: $800.00
+earned $800.00
+
+hourly employee: HourlyEmployee@1540e19d
+hourly wage: $16.75; hours worked: 40.00
+earned $670.00
+
+commission employee: CommissionEmployee@677327b6
+gross sales: $10,000.00; commission rate: 0.06
+earned $600.00
+
+base-salaried commission employee: BasePlusCommissionEmployee@14ae5a5
+gross sales: $5,000.00; commission rate: 0.04; base salary: $300.00
+earned $500.00
+
+*******Employees after sorting*************  
+
+base-salaried commission employee: BasePlusCommissionEmployee@14ae5a5
+gross sales: $5,000.00; commission rate: 0.04; base salary: $300.00
+earned $500.00
+
+commission employee: CommissionEmployee@677327b6
+gross sales: $10,000.00; commission rate: 0.06
+earned $600.00
+
+hourly employee: HourlyEmployee@1540e19d
+hourly wage: $16.75; hours worked: 40.00
+earned $670.00
+
+salaried employee: SalariedEmployee@74a14482
+weekly salary: $800.00
+earned $800.00
+
+bash-3.2$ exit
+exit
+
+Script done on Fri Nov 27 21:06:42 2015
